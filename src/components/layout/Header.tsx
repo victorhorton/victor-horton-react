@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
-    <nav className="w-full h-10">
-      <ul className="flex flex-row place-content-center items-center gap-4 h-10">
+    <nav className="h-10 w-full">
+      <ul className="flex h-10 flex-row place-content-center items-center gap-4">
         <li className="flex-initial">
           <Link to="/">Home</Link>
         </li>
@@ -15,5 +15,5 @@ export default function Header() {
         </li>
       </ul>
     </nav>
-  );
+  )
 }

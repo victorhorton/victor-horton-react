@@ -1,3 +1,3 @@
 export default function Body({ children }) {
-  return <>{children}</>;
+  return <>{children}</>
 }

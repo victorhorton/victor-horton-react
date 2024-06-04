@@ -1,3 +1,3 @@
 export default function ProjectShow() {
-  return <>Project Show</>;
+  return <>Project Show</>
 }

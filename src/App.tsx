@@ -1,11 +1,11 @@
-import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import ProjectIndex from "./pages/Projects/ProjectIndex";
-import ProjectShow from "./pages/Projects/ProjectShow";
-import Header from "./components/layout/Header";
-import Body from "./components/layout/Body";
-import Footer from "./components/layout/Footer";
+import { Route, BrowserRouter, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import ProjectIndex from './pages/Projects/ProjectIndex'
+import ProjectShow from './pages/Projects/ProjectShow'
+import Header from './components/layout/Header'
+import Body from './components/layout/Body'
+import Footer from './components/layout/Footer'
 
 const App = () => (
   <BrowserRouter>
@@ -20,6 +20,6 @@ const App = () => (
     </Body>
     <Footer />
   </BrowserRouter>
-);
+)
 
-export default App;
+export default App

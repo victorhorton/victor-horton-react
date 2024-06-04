@@ -1,3 +1,3 @@
 export default function ProjectIndex() {
-  return <>Project Index</>;
+  return <>Project Index</>
 }
