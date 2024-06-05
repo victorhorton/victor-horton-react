@@ -1,4 +1,5 @@
 import GlowingText from '../components/GlowingText'
+import Typewriter from '../components/Typewriter'
 
 export default function Home() {
   return (
@@ -11,6 +12,10 @@ export default function Home() {
           <GlowingText>I'm a full-stack developer</GlowingText>
         </h2>
       </div>
+      <hr className="my-4" />
+      <p className="font-mono text-xl">
+        <Typewriter text="I've been working three years as a professional developer and love building cool things" />
+      </p>
     </>
   )
 }

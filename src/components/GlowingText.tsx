@@ -14,10 +14,10 @@ export default function GlowingText({ children }: { children: string }) {
         )
 
         // Calculate color based on distance
-        const maxDistance = 200 // Maximum distance to affect the color
+        const maxDistance = 150 // Maximum distance to affect the color
         const proximity = Math.max(0, 1 - distance / maxDistance) // Proximity ratio (0 to 1)
         const colorValue = Math.floor(255 * proximity) // Adjust color based on proximity
-        const color = `rgb(${colorValue}, 0, 0)` // Color transition from black to red
+        const color = `rgb(0, 0, ${colorValue})` // Color transition from black to red
         ;(section as HTMLElement).style.color = color
       })
     }
