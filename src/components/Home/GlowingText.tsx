@@ -42,8 +42,12 @@ export default function GlowingText({ children }: { children: string }) {
 
   return (
     <>
-      {[...children].map((character) => {
-        return <span className="color">{character}</span>
+      {[...children].map((character, idx) => {
+        return (
+          <span key={idx} className="color">
+            {character}
+          </span>
+        )
       })}
     </>
   )
