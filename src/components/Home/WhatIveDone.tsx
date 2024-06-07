@@ -78,7 +78,7 @@ export default function WhatIveDone() {
             <a
               href="https://www.successvision.com"
               target="_blank"
-              className="relative z-10 underline"
+              className="relative z-10 text-blue-700 underline"
             >
               successvision.com
             </a>

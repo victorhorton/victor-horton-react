@@ -1,3 +1,4 @@
+import ContactMe from '../components/Home/ContactMe'
 import GlowingText from '../components/Home/GlowingText'
 import TypewriterEffect from '../components/Home/TypewriterEffect'
 import WhatIveDone from '../components/Home/WhatIveDone'
@@ -24,6 +25,7 @@ export default function Home() {
         <TypewriterEffect texts={typedOutText} />
       </div>
       <WhatIveDone />
+      <ContactMe />
     </>
   )
 }
