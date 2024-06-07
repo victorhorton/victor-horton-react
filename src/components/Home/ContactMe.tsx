@@ -1,7 +1,7 @@
 export default function ContactMe() {
   return (
     <div className="min-h-dvh">
-      <h1 className="py-10 text-8xl">Get in touch</h1>
+      <h1 className="py-10 text-6xl lg:text-8xl">Get in touch</h1>
       <ul className="px-10">
         <li className="py-2 text-xl">
           Send me an email at{' '}

@@ -14,10 +14,10 @@ export default function Home() {
     <>
       <div className="min-h-dvh">
         <div className="pt-10">
-          <h1 className="font-display text-7xl font-semibold">
+          <h1 className="font-display text-5xl font-semibold lg:text-7xl">
             <GlowingText>Hi, I'm Victor Horton</GlowingText>
           </h1>
-          <h2 className="font-display text-7xl font-semibold">
+          <h2 className="font-display text-5xl font-semibold lg:text-7xl">
             <GlowingText>I'm a full-stack developer</GlowingText>
           </h2>
         </div>

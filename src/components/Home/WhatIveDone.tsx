@@ -53,13 +53,13 @@ export default function WhatIveDone() {
     <div id="my-work-parent">
       <div
         id="title-text-parent"
-        className="sticky top-0 flex h-screen flex-col justify-between"
+        className="sticky top-0 flex h-dvh flex-col justify-between"
       >
         <h1
           id="title-text"
-          className="my-10 font-display text-6xl font-semibold"
+          className="my-10 font-display text-5xl font-semibold lg:text-6xl"
         >
-          Work I've Done
+          What I've Done
         </h1>
         <FontAwesomeIcon
           className="m-10 h-6 w-6 animate-bounce self-center"
@@ -68,12 +68,12 @@ export default function WhatIveDone() {
       </div>
       <div className="container mx-auto px-5">
         <div className="fade-in flex h-screen justify-center">
-          <p className="text-4xl">
+          <p className="text-2xl lg:text-4xl">
             Migrated accounting/financial data from deprecated software to MySQL
           </p>
         </div>
         <div className="fade-in flex h-screen justify-center">
-          <p className="text-4xl">
+          <p className="text-2xl lg:text-4xl">
             Redesigned the e-commerce site{' '}
             <a
               href="https://www.successvision.com"
@@ -86,13 +86,13 @@ export default function WhatIveDone() {
           </p>
         </div>
         <div className="fade-in flex h-screen justify-center">
-          <p className="text-4xl">
+          <p className="text-2xl lg:text-4xl">
             Integrated Square's Payment API for online and in-store purchases
             with an internal POS backend
           </p>
         </div>
         <div className="fade-in flex h-screen justify-center">
-          <p className="text-4xl">
+          <p className="text-2xl lg:text-4xl">
             Mentored an intern in full-stack development, fostering growth and
             knowledge transfer within the organization
           </p>
