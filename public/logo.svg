@@ -1,0 +1,14 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+
+<!-- The V  -->
+  <path d="M 155 25 L 185 25 L 120 275 L 90 275 Z" stroke="black" stroke-width="1" fill="black" />
+  <path d="M 25 25 L 55 25 L 120 275 L 90 275 Z" stroke="black" stroke-width="1" fill="black" />
+
+<!-- The H -->
+  <path d="M 115 25 L 115 140.38 L 145 25 Z" stroke="black" stroke-width="1" fill="black" />
+  <path d="M 130 275 L 145 217.307692308 L 145 275 Z" stroke="black" stroke-width="1" fill="black" />
+
+  <path d="M 166.4 135 L 250 135 L 250 165 L 158.6 165 Z" stroke="black" stroke-width="1" fill="black" />
+
+  <line x1="250" y1="25" x2="250" y2="275" stroke="black" stroke-width="30" />
+</svg>
