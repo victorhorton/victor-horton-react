@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-dvh">
+      <div className="min-h-lvh">
         <div className="pt-10">
           <h1 className="font-display text-5xl font-semibold lg:text-7xl">
             <GlowingText>Hi, I'm Victor Horton</GlowingText>
