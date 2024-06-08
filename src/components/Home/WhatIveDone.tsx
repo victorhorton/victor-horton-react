@@ -53,7 +53,7 @@ export default function WhatIveDone() {
     <div id="my-work-parent">
       <div
         id="title-text-parent"
-        className="sticky top-0 flex h-dvh flex-col justify-between"
+        className="sticky top-0 flex h-lvh flex-col justify-between"
       >
         <h1
           id="title-text"
