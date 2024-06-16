@@ -1,7 +1,5 @@
-import pokemonImg from '../../assets/project-images/pokemon.webp'
-import budgetImg from '../../assets/project-images/budget.webp'
-import { HashLink } from 'react-router-hash-link'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { project, projects } from '../../types/project'
 
 export default function ProjectsCarousel() {
   useEffect(() => {
