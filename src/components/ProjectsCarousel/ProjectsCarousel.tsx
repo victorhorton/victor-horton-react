@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { project, projects } from '../../types/project'
 
 export default function ProjectsCarousel() {
+  const [currentProject, setCurrentProject] = useState<project>(projects[0])
+
   useEffect(() => {
     const handleScroll = () => {
       const elements =
@@ -28,63 +30,65 @@ export default function ProjectsCarousel() {
     }
   }, [])
 
-  type project = {
-    name: string
-    imgSource: string
-    description: string
-    languages: string[]
+  function getProjectClasses(project: { id: number }, idx: number): string {
+    const classes = ['py-2']
+    if (idx < projects.length - 1) {
+      classes.push('border-b')
+    }
+    if (project.id === currentProject.id) {
+      classes.push('font-thin')
+    }
+
+    return classes.join(' ')
   }
 
-  const projects: project[] = [
-    {
-      name: 'Pokemon Stat App',
-      imgSource: pokemonImg,
-      description:
-        'A website to view different strengths and weaknesses for pokemon',
-      languages: ['Vue', 'Typescript'],
-    },
-    {
-      name: 'Budget App',
-      imgSource: budgetImg,
-      description: 'A clone of the Everydollar budgeting app',
-      languages: ['Vue', 'ASP.net Core', 'SQLite'],
-    },
-  ]
+  function handleMouseEnter(id: project['id']) {
+    const foundProject = projects.find((project) => project.id === id)
+
+    if (foundProject) {
+      setCurrentProject(foundProject)
+    }
+  }
 
   return (
-    <div className="">
-      <div className="sticky top-0 flex min-h-dvh w-1/2 flex-col place-content-center">
-        <ul className="me-10">
-          {projects.map((project, idx) => {
-            return (
-              <li className={idx === 0 ? 'border-b' : ''}>
-                <HashLink
-                  smooth
-                  to={`/#${project.name}-element`}
-                  id={`${project.name}-link`}
+    <div className="flex h-screen flex-col">
+      <h1
+        id="title-text"
+        className="flex-none py-10 font-display text-5xl font-semibold lg:text-6xl"
+      >
+        My Projects
+      </h1>
+      <div className="flex flex-1 flex-col md:flex-row">
+        <div className="md:w-1/2">
+          <ul className="mx-5 mb-5">
+            {projects.map((project, idx) => {
+              return (
+                <li
+                  className={getProjectClasses(project, idx)}
+                  onClick={() => {
+                    handleMouseEnter(project.id)
+                  }}
+                  onMouseEnter={() => {
+                    handleMouseEnter(project.id)
+                  }}
                 >
                   {project.name}
-                </HashLink>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-      <div className="ms-auto w-1/2">
-        {projects.map((project) => {
-          return (
-            <div
-              key={project.name}
-              id={`${project.name}-element`}
-              data-project-name={project.name}
-              className="anchor-elements h-screen flex-col place-content-center"
-            >
-              <h1>{project.name}</h1>
-              <img src={project.imgSource} />
-              <p>{project.description}</p>
-            </div>
-          )
-        })}
+                </li>
+              )
+            })}
+          </ul>
+          <div className="mx-5 my-5">
+            <p>{currentProject.description}</p>
+          </div>
+        </div>
+        <div
+          key={currentProject.name}
+          id={`${currentProject.name}-element`}
+          data-project-name={currentProject.name}
+          className="mx-5 md:w-1/2"
+        >
+          <img src={currentProject.imgSource} />
+        </div>
       </div>
     </div>
   )
